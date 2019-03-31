@@ -30,7 +30,8 @@ public class EMDeviceUtil {
 
     static {
         NON_CTS_COMPLIANT_MANUFACTURERS = new String[] {
-            "Amazon"
+// JELLYFIN: Remove blacklist of Amazon devices
+//            "Amazon"
         };
 
         NON_CTS_COMPLIANT_DEVICES = new String[] {
