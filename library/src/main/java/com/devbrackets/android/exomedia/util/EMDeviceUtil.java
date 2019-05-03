@@ -71,7 +71,8 @@ public class EMDeviceUtil {
      */
     public static boolean isDeviceTV(Context context) {
         //Since Android TV is only API 21+ that is the only time we will compare configurations
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+// JELLYFIN: Add check for Fire TV model prefix
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP || Build.MODEL.startsWith("AFT")) {
             UiModeManager uiManager = (UiModeManager) context.getSystemService(Context.UI_MODE_SERVICE);
             return uiManager != null && uiManager.getCurrentModeType() == Configuration.UI_MODE_TYPE_TELEVISION;
         }
