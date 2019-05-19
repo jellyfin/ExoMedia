@@ -1,5 +1,8 @@
 ExoMedia
 ============
+
+> **NOTE:** This fork is used in the [Jellyfin Android TV app](https://github.com/jellyfin/jellyfin-androidtv/) to provide support for Amazon Fire TV devices using the [official port of ExoPlayer for Amazon devices](https://github.com/amzn/exoplayer-amazon-port).
+
 A Utility class that wraps the ExoPlayer in to a standardized
 View and API much like the built in Android VideoView and MediaPlayer.
 Additionally, to simplify playback of media lists a playlist manager
